@@ -8,8 +8,10 @@ Mini sistema de vendas de um mercado feito com conceitos básicos de Python
     * Informar a quantidade do item que o cliente vai comprar
     * Informar o valor fornecido pelo cliente
     * Sistema analiza se vai precisar de troco ou não
+    
 [CADASTRAR PRODUTOS]:
     * Usuário informa: nome do produto, código, quantidade e o valor
+    
 [RELATÓRIO DE VENDAS]
     * Quando o sistema é iniciado é criado um arquivo txt 
     * Cada venda que é efetuada é registrado as informações nesse arquivo

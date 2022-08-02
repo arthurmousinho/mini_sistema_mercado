@@ -174,7 +174,7 @@ while True:
                                             break
 
     
-        elif opcao == 3: #SAIR DO PROGRAMA
+        elif opcao == 3: #SAIR DO SISTEMA
             f.clear()
             print("Sistema finalizado...")
             break

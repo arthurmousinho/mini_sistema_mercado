@@ -6,8 +6,6 @@ codes = [9649 , 9847 , 2567 , 7830]
 stock = [30 , 30 , 10 , 30]
 prices = [20.00 , 10.00 , 9.00 , 10.00]
 
-file = open('relatorio_de_vendas.txt' , 'x')
-file.close()
 
 while True:
     f.menu()
@@ -46,7 +44,7 @@ while True:
                             codigo = int(input("Código do produto: "))
                         except(ValueError,TypeError):
                             f.clear()
-                            print("Tent novamente")
+                            print("Tent novamente") 
                         else:
                             f.clear()
                             if not f.verificar_codigo(codigo,codes,products,prices):
@@ -78,10 +76,10 @@ while True:
                                     file = open('relataorio_de_vendas.txt' , 'a')
                                     produto = products[codes.index(codigo)]
                                     file.write(f"{quantidade} -- {produto} -- {total_compra :.2f}\n")
+                                    file.close()
 
                                     continue                   
-                     
-                    
+                                        
                     elif pesquisa == 2: #finalizar
                         f.clear()
                         print(f"Total da compra R${total_compra:.2f}")
@@ -90,6 +88,13 @@ while True:
                         except(ValueError,TypeError):
                             print("Tente Novamente")
                         else:
+                            f.clear()
+                            while pagamento < total_compra:
+                                f.clear()
+                                print("Valor fornecido menor que o valor da compra")
+                                print()
+                                print(f"Total da compra R${total_compra:.2f}")
+                                pagamento = float(input("Valor fornecido: R$ "))
                             f.clear()
                             troco = pagamento - total_compra
                             if troco > 0:
@@ -174,7 +179,7 @@ while True:
                                             break
 
     
-        elif opcao == 3: #SAIR DO SISTEMA
+        elif opcao == 3:
             f.clear()
-            print("Sistema finalizado...")
+            print("Sistema finalizado...Relatório de venda já está disponível")
             break

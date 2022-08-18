@@ -1,6 +1,7 @@
 # mini_sistema_mercado
 Mini sistema de vendas de um mercado feito com conceitos básicos de Python
 
+RODAR SISTEMA: https://replit.com/@Arthur-Mousinho/minisistemamercado#main.py
 
 [EFETUAR VENDA]:
     * Informar o código do produto

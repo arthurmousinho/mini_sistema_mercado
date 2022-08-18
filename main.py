@@ -73,7 +73,7 @@ while True:
                                         valor = prices[codes.index(codigo)]
                                         total_compra = total_compra + (valor * quantidade)
 
-                                    file = open('relataorio_de_vendas.txt' , 'a')
+                                    file = open('relatorio_de_vendas.txt' , 'a')
                                     produto = products[codes.index(codigo)]
                                     file.write(f"{quantidade} -- {produto} -- {total_compra :.2f}\n")
                                     file.close()
